@@ -27,17 +27,15 @@
                                     <action selector="RedButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xg2-bj-pHt"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Axn-CE-r19">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Axn-CE-r19">
                                 <rect key="frame" x="126" y="433" width="31" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Blue"/>
                                 <connections>
                                     <action selector="BlueButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eBR-53-C3Q"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dWi-tJ-l7c">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dWi-tJ-l7c">
                                 <rect key="frame" x="255" y="433" width="42" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Green"/>
                                 <connections>
                                     <action selector="GreenButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6re-ky-1gE"/>
@@ -46,8 +44,14 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="Axn-CE-r19" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3cr-AY-PW0"/>
                             <constraint firstItem="LAQ-fZ-TVT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7U4-ua-YUv"/>
+                            <constraint firstItem="Axn-CE-r19" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Egm-hv-ynd"/>
                             <constraint firstItem="LAQ-fZ-TVT" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="aXa-Ji-KNj"/>
+                            <constraint firstItem="dWi-tJ-l7c" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="bjS-uc-UFq"/>
+                            <constraint firstItem="dWi-tJ-l7c" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="69" id="km9-mW-mQM"/>
+                            <constraint firstItem="Axn-CE-r19" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-65.5" id="u3t-dB-DAg"/>
+                            <constraint firstItem="Axn-CE-r19" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="xew-X8-0Iq"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
