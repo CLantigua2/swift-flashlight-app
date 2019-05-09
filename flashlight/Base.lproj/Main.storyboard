@@ -19,11 +19,28 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LAQ-fZ-TVT">
-                                <rect key="frame" x="167" y="433" width="80" height="30"/>
+                                <rect key="frame" x="192" y="433" width="30" height="30"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
-                                <state key="normal" title="Hello World"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                <state key="normal" title="Red"/>
                                 <connections>
-                                    <action selector="helloWorldButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Paa-rV-ND8"/>
+                                    <action selector="RedButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xg2-bj-pHt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Axn-CE-r19">
+                                <rect key="frame" x="126" y="433" width="31" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Blue"/>
+                                <connections>
+                                    <action selector="BlueButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eBR-53-C3Q"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dWi-tJ-l7c">
+                                <rect key="frame" x="255" y="433" width="42" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Green"/>
+                                <connections>
+                                    <action selector="GreenButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6re-ky-1gE"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -35,11 +52,14 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="helloworldbutton" destination="LAQ-fZ-TVT" id="lqM-jX-So7"/>
+                        <outlet property="BlueButton" destination="Axn-CE-r19" id="Q0g-Yz-hLW"/>
+                        <outlet property="GreenButton" destination="dWi-tJ-l7c" id="Bbk-sb-pnv"/>
+                        <outlet property="RedButton" destination="LAQ-fZ-TVT" id="tuL-Do-duE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="89.855072463768124" y="20.758928571428569"/>
         </scene>
     </scenes>
 </document>

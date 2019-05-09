@@ -10,16 +10,28 @@ import UIKit
 
 class ViewController: UIViewController {
     //outlet to UI element, had to drag in with ctrl+left click
-    @IBOutlet weak var helloworldbutton: UIButton!
+    @IBOutlet weak var RedButton: UIButton!
+    @IBOutlet weak var BlueButton: UIButton!
+    @IBOutlet weak var GreenButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.helloworldbutton.setTitle("Turn On", for: .normal)
+        self.RedButton.setTitle("Turn On", for: .normal)
+        self.BlueButton.setTitle("Turn On", for: .normal)
+        self.GreenButton.setTitle("Turn On", for: .normal)
     }
 
-    @IBAction func helloWorldButtonTapped(_ sender: Any) {
+    
+    @IBAction func RedButtonTapped(_ sender: Any) {
         self.view.backgroundColor = .red
+    }
+    
+    @IBAction func BlueButtonTapped(_ sender: Any) {
+        self.view.backgroundColor = .blue
+    }
+    
+    @IBAction func GreenButtonTapped(_ sender: Any) {
+        self.view.backgroundColor = .green
     }
     
 }
