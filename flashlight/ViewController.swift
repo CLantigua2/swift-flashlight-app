@@ -16,9 +16,9 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.RedButton.setTitle("Turn On", for: .normal)
-        self.BlueButton.setTitle("Turn On", for: .normal)
-        self.GreenButton.setTitle("Turn On", for: .normal)
+        self.RedButton.setTitle("Turn Red", for: .normal)
+        self.BlueButton.setTitle("Turn Blue", for: .normal)
+        self.GreenButton.setTitle("Turn Green", for: .normal)
     }
 
     

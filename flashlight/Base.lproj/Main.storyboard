@@ -18,40 +18,39 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LAQ-fZ-TVT">
-                                <rect key="frame" x="192" y="433" width="30" height="30"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
-                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
-                                <state key="normal" title="Red"/>
-                                <connections>
-                                    <action selector="RedButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xg2-bj-pHt"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Axn-CE-r19">
-                                <rect key="frame" x="126" y="433" width="31" height="30"/>
-                                <state key="normal" title="Blue"/>
-                                <connections>
-                                    <action selector="BlueButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eBR-53-C3Q"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dWi-tJ-l7c">
-                                <rect key="frame" x="255" y="433" width="42" height="30"/>
-                                <state key="normal" title="Green"/>
-                                <connections>
-                                    <action selector="GreenButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6re-ky-1gE"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="UgW-dJ-hwL">
+                                <rect key="frame" x="186" y="368" width="42" height="160"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Axn-CE-r19">
+                                        <rect key="frame" x="0.0" y="0.0" width="42" height="30"/>
+                                        <state key="normal" title="Blue"/>
+                                        <connections>
+                                            <action selector="BlueButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eBR-53-C3Q"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LAQ-fZ-TVT">
+                                        <rect key="frame" x="0.0" y="65" width="42" height="30"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                        <state key="normal" title="Red"/>
+                                        <connections>
+                                            <action selector="RedButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xg2-bj-pHt"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dWi-tJ-l7c">
+                                        <rect key="frame" x="0.0" y="130" width="42" height="30"/>
+                                        <state key="normal" title="Green"/>
+                                        <connections>
+                                            <action selector="GreenButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6re-ky-1gE"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Axn-CE-r19" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3cr-AY-PW0"/>
-                            <constraint firstItem="LAQ-fZ-TVT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7U4-ua-YUv"/>
-                            <constraint firstItem="Axn-CE-r19" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Egm-hv-ynd"/>
-                            <constraint firstItem="LAQ-fZ-TVT" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="aXa-Ji-KNj"/>
-                            <constraint firstItem="dWi-tJ-l7c" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="bjS-uc-UFq"/>
-                            <constraint firstItem="dWi-tJ-l7c" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="69" id="km9-mW-mQM"/>
-                            <constraint firstItem="Axn-CE-r19" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-65.5" id="u3t-dB-DAg"/>
-                            <constraint firstItem="Axn-CE-r19" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="xew-X8-0Iq"/>
+                            <constraint firstItem="UgW-dJ-hwL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ljM-Iw-IQn"/>
+                            <constraint firstItem="UgW-dJ-hwL" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ymr-AW-tJf"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
