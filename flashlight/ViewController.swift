@@ -9,12 +9,18 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    //outlet to UI element, had to drag in with ctrl+left click
+    @IBOutlet weak var helloworldbutton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        self.helloworldbutton.setTitle("Turn On", for: .normal)
     }
 
-
+    @IBAction func helloWorldButtonTapped(_ sender: Any) {
+        self.view.backgroundColor = .red
+    }
+    
 }
 
